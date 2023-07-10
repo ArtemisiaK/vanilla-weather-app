@@ -66,11 +66,17 @@ function showWeatherCondition(response) {
 
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
-  console.log(response);
-  console.log(response);
+
   document.querySelector("#todays-day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
+  console.log(response);
+  document
+    .querySelector("#current-icon")
+    .setAttribute(
+      "src",
+      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function search(city) {
