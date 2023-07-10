@@ -1,5 +1,45 @@
-let timeDateStamp = new Date();
-function formatDate(todaysDate) {
+// let timeDateStamp = new Date();
+// function formatDate(todaysDate) {
+//   let days = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//   ];
+
+//   let day = days[timeDateStamp.getDay()];
+//   let timeHours = timeDateStamp.getHours();
+//   if (timeHours < 10) {
+//     timeHours = `0${timeHours}`;
+//   }
+//   let timeMinutes = timeDateStamp.getMinutes();
+//   if (timeMinutes < 10) {
+//     timeMinutes = `0${timeMinutes}`;
+//   }
+
+//   let formattedDate = `${day} </br>${timeHours}:${timeMinutes}`;
+
+//   return formattedDate;
+// }
+
+// let timeStamp = document.querySelector("#todays-day-time");
+// timeStamp.innerHTML = formatDate(timeDateStamp);
+
+//search functionality
+
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -9,26 +49,10 @@ function formatDate(todaysDate) {
     "Friday",
     "Saturday",
   ];
+  let day = days[date.getDay()];
 
-  let day = days[timeDateStamp.getDay()];
-  let timeHours = timeDateStamp.getHours();
-  if (timeHours < 10) {
-    timeHours = `0${timeHours}`;
-  }
-  let timeMinutes = timeDateStamp.getMinutes();
-  if (timeMinutes < 10) {
-    timeMinutes = `0${timeMinutes}`;
-  }
-
-  let formattedDate = `${day} </br>${timeHours}:${timeMinutes}`;
-
-  return formattedDate;
+  return `${day} ${hours}:${minutes}`;
 }
-
-let timeStamp = document.querySelector("#todays-day-time");
-timeStamp.innerHTML = formatDate(timeDateStamp);
-
-//search functionality
 
 function showWeatherCondition(response) {
   document.querySelector("#search-location").innerHTML = response.data.name;
@@ -43,6 +67,10 @@ function showWeatherCondition(response) {
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
   console.log(response);
+  console.log(response);
+  document.querySelector("#todays-day-time").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 function search(city) {
