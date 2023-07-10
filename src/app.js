@@ -72,25 +72,6 @@ function getCurrentLocation(event) {
 let buttonClick = document.querySelector("#search-button");
 buttonClick.addEventListener("click", handleSubmit);
 
-//bonus - celcius to fahrenheit switcher
-
-function switchToFahrenheit(event) {
-  event.preventDefault();
-  let mainTemperature = document.querySelector("#todays-temperature-main");
-  mainTemperature.innerHTML = 63;
-}
-
-let fahrenheitClick = document.querySelector("#fahrenheit");
-fahrenheitClick.addEventListener("click", switchToFahrenheit);
-
-function switchToCelsius() {
-  let celsius = document.querySelector("#todays-temperature-main");
-  celsius.innerHTML = 17;
-}
-
-let celsiusClick = document.querySelector("#celsius");
-celsiusClick.addEventListener("click", switchToCelsius);
-
 let currentLocationButton = document.querySelector("#current-location-btn");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
