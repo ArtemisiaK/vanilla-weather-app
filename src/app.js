@@ -33,8 +33,9 @@ function showWeatherCondition(response) {
   );
 
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].description;
-
+    response.data.weather[0].description.charAt(0).toUpperCase() +
+    response.data.weather[0].description.slice(1);
+  console.log(response);
   document.querySelector("#todays-day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
