@@ -28,15 +28,13 @@ p.precipitation-wind {
 
 .container {
   max-width: 75%;
-  background-color: antiquewhite;
-  margin: 50px auto;
   display: block;
+  margin: 50px auto;
+}
+.container-wrapper {
+  background-color: antiquewhite;
   padding: 25px;
   border-radius: 15px;
-}
-
-.container-wrapper {
-  max-width: 600px;
 }
 
 .today {

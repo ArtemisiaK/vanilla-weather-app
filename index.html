@@ -22,115 +22,119 @@
 </head>
 
 <body>
-
     <div class="container">
-
-        <div class="row mx-auto p-5 m-0">
-            <div class="row">
-                <div class="col-7">
-                    <div class="form-group">
-                        <form id="location-search">
-
-                            <input type="search" placeholder="Enter your city" class="form-control shadow-sm"
-                                autofocus="on" id="search-input" />
+        <div class="container-wrapper">
+            <div class="row mx-auto p-5 m-0">
+                <form id="location-search">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="form-group">
+                                <input type="search" placeholder="Enter your city" class="form-control shadow-sm"
+                                    autofocus="on" id="search-input" />
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-success shadow-sm" id="search-button" />
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-light">
+                                <i id="current-location-btn"
+                                    class="fa-solid fa-location-crosshairs exact-location-btn"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <input type="submit" value="Search" class="btn btn-success shadow-sm" id="search-button" />
-                </div>
                 </form>
-                <div class="col-2">
-                    <button class="btn btn-light">
-                        <i id="current-location-btn" class="fa-solid fa-location-crosshairs exact-location-btn"></i>
-                    </button>
-                </div>
             </div>
-
-        </div>
-        <div class="row mx-auto p-2">
-            <div class="col-6 today">
-                <h1 class="location" id="search-location"></h1>
-                <!-- <i class="fa-solid fa-sun"></i> -->
-                <img src="" alt="" id="current-icon">
-                <h2 class="today-temp"><span id="todays-temperature-main"></span><span class="degree-symbol">°</span>
-                </h2>
-                <p class="metric-switcher"><span id="celsius-link"><a href="#" class="active">°C</a></span>
-                    | <span id="fahrenheit-link"><a href="#" class="active">°F</a> </span></span>
-                </p>
-                <h3 class="today-detail">
-                    Today <br />
-                    <div id="weather-description"></div>
-                </h3>
-                <p><span>Last updated:</span></p>
-                <p class="time-stamp" id="todays-day-time"></p>
-                <p class="precipitation-wind">
-
-                <div>Humidity: <span id="humidity"></span>%</div>
-                <div>Wind: <span id="wind"></span>km/h</div>
-
-                </p>
-            </div>
-            <div class="col-6 future">
-                <div class="row-future">
-                    <div class="col-4 future-day">Wed</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-sun future-icon-sun"></i>
-                    </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
+            <div class="row mx-auto p-2">
+                <div class="col-6 today">
+                    <h1 class="location" id="search-location"></h1>
+                    <!-- <i class="fa-solid fa-sun"></i> -->
+                    <img src="" alt="" id="current-icon" />
+                    <h2 class="today-temp">
+                        <span id="todays-temperature-main"></span><span class="degree-symbol">°</span>
+                    </h2>
+                    <p class="metric-switcher">
+                        <span id="celsius-link"><a href="#" class="active">°C</a></span> |
+                        <span id="fahrenheit-link"><a href="#" class="active">°F</a>
+                        </span>
+                    </p>
+                    <h3 class="today-detail">
+                        Today <br />
+                        <div id="weather-description"></div>
+                    </h3>
+                    <p><span>Last updated:</span></p>
+                    <p class="time-stamp" id="todays-day-time"></p>
+                    <div class="precipitation-wind">
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind: <span id="wind"></span>km/h</p>
                     </div>
                 </div>
-                <div class="row-future">
-                    <div class="col-4 future-day">Thu</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-cloud-rain future-icon-rain"></i>
+                <div class="col-6 future">
+                    <div class="row-future">
+                        <div class="col-4 future-day">Wed</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-sun future-icon-sun"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
+                    <div class="row-future">
+                        <div class="col-4 future-day">Thu</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-cloud-rain future-icon-rain"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
-                </div>
-                <div class="row-future">
-                    <div class="col-4 future-day">Fri</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-cloud future-icon-cloud"></i>
+                    <div class="row-future">
+                        <div class="col-4 future-day">Fri</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-cloud future-icon-cloud"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
+                    <div class="row-future">
+                        <div class="col-4 future-day">Sat</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-sun future-icon-sun"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
-                </div>
-                <div class="row-future">
-                    <div class="col-4 future-day">Sat</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-sun future-icon-sun"></i>
+                    <div class="row-future">
+                        <div class="col-4 future-day">Sun</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-sun future-icon-sun"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
-                    </div>
-                </div>
-                <div class="row-future">
-                    <div class="col-4 future-day">Sun</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-sun future-icon-sun"></i>
-                    </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
-                    </div>
-                </div>
-                <div class="row-future">
-                    <div class="col-4 future-day">Mon</div>
-                    <div class="col-4">
-                        <i class="fa-solid fa-sun future-icon-sun"></i>
-                    </div>
-                    <div class="col-4">
-                        <span class="max-temp">17°</span> <span class="min-temp">8°</span>
+                    <div class="row-future">
+                        <div class="col-4 future-day">Mon</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-sun future-icon-sun"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <small><a href="https://github.com/artemis-karozis/vanilla-weather-app" target="blank"
-                class="open-source-link">Open-source
-                code</a>by Artemis Karozis</small>
-    </div>
+                class="open-source-link">Open-source code</a>by Artemis Karozis</small>
     </div>
     <script src="src/app.js"></script>
 </body>
