@@ -177,3 +177,9 @@ a {
   color: #535e4b;
   padding: 10px 10px 40px;
 }
+.degree-symbol {
+  font-size: 34px;
+  position: relative;
+  top: -0.5em;
+  left: 0.01em;
+}
