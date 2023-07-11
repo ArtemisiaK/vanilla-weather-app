@@ -1,35 +1,3 @@
-// let timeDateStamp = new Date();
-// function formatDate(todaysDate) {
-//   let days = [
-//     "Sunday",
-//     "Monday",
-//     "Tuesday",
-//     "Wednesday",
-//     "Thursday",
-//     "Friday",
-//     "Saturday",
-//   ];
-
-//   let day = days[timeDateStamp.getDay()];
-//   let timeHours = timeDateStamp.getHours();
-//   if (timeHours < 10) {
-//     timeHours = `0${timeHours}`;
-//   }
-//   let timeMinutes = timeDateStamp.getMinutes();
-//   if (timeMinutes < 10) {
-//     timeMinutes = `0${timeMinutes}`;
-//   }
-
-//   let formattedDate = `${day} </br>${timeHours}:${timeMinutes}`;
-
-//   return formattedDate;
-// }
-
-// let timeStamp = document.querySelector("#todays-day-time");
-// timeStamp.innerHTML = formatDate(timeDateStamp);
-
-//search functionality
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -65,18 +33,23 @@ function showWeatherCondition(response) {
   );
 
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 
   document.querySelector("#todays-day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
-  console.log(response);
+
   document
     .querySelector("#current-icon")
     .setAttribute(
       "src",
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+
+  document
+    .querySelector("#current-icon")
+    .setAttribute("alt", response.data.weather[0].description);
+  console.log(response);
 }
 
 function search(city) {
