@@ -35,6 +35,10 @@ p.precipitation-wind {
   border-radius: 15px;
 }
 
+.container-wrapper {
+  max-width: 600px;
+}
+
 .today {
   margin: 0 auto;
   display: block;
@@ -155,7 +159,7 @@ a {
 }
 .open-source-link {
   text-align: center;
-  color: #535e4b;
+  color: #e79c12;
   padding: 10px 10px 40px;
 }
 .degree-symbol {

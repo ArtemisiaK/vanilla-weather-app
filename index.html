@@ -22,8 +22,9 @@
 </head>
 
 <body>
-    <div class="container-background">
-        <div class="container">
+
+    <div class="container">
+        <div class="container-wrapper">
             <div class="row mx-auto p-5 m-0">
                 <div class="row">
                     <div class="col-7">
@@ -52,9 +53,10 @@
                     <!-- <i class="fa-solid fa-sun"></i> -->
                     <img src="" alt="" id="current-icon">
                     <h2 class="today-temp"><span id="todays-temperature-main"></span><span
-                            class="degree-symbol">°</span></h2>
-                    <p class="metric-switcher"><span id="celsius-link"><a href="#" class="celsius">°C</a></span>
-                        | <span id="fahrenheit-link"><a href="#" class="fahrenheit">°F</a> </span></span>
+                            class="degree-symbol">°</span>
+                    </h2>
+                    <p class="metric-switcher"><span id="celsius-link"><a href="#" class="active">°C</a></span>
+                        | <span id="fahrenheit-link"><a href="#" class="active">°F</a> </span></span>
                     </p>
                     <h3 class="today-detail">
                         Today <br />
@@ -126,13 +128,10 @@
                     </div>
                 </div>
             </div>
+            <small><a href="https://github.com/artemis-karozis/vanilla-weather-app" target="blank"
+                    class="open-source-link">Open-source
+                    code</a>by Artemis Karozis</small>
         </div>
-
-    </div>
-    <div class="open-source-link"><a href="https://github.com/artemis-karozis/vanilla-weather-app"
-            target="blank">Open-source
-            code</a> by
-        Artemis Karozis
     </div>
     <script src="src/app.js"></script>
 </body>
