@@ -143,29 +143,11 @@ form {
 p.time-stamp {
   color: #440a35;
 }
-/* .metric-switcher {
-  color: #535e4b;
-  font-size: 15px; */
 
-a.celsius-link:link {
-  text-decoration: none;
-  color: #535e4b;
-}
-a.celsius-link:visited {
-  text-decoration: none;
-  color: #535e4b;
-}
-a.celsius-link:hover {
-  text-decoration: none;
-  color: #3d550c;
-  font-weight: 900;
-}
-a.celsius-link:active {
-  color: #535e4b;
-  text-decoration: none;
-}
 a {
   text-decoration: none !important;
+  color: #535e4b;
+  cursor: default;
 }
 .exact-location-btn {
   text-decoration: none;
@@ -181,4 +163,7 @@ a {
   position: relative;
   top: -0.5em;
   left: 0.01em;
+}
+.metric-switcher .active {
+  color: #535e4b;
 }
