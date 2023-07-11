@@ -23,10 +23,11 @@ function formatDate(timestamp) {
 }
 
 function showWeatherCondition(response) {
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#search-location").innerHTML = response.data.name;
-  document.querySelector("#todays-temperature-main").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#todays-temperature-main").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -77,10 +78,25 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault;
+
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let currentTemperatureElement = document.querySelector(
+    "#todays-temperature-main"
+  );
+  currentTemperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celsiusTemperature = null;
+
 let buttonClick = document.querySelector("#search-button");
 buttonClick.addEventListener("click", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-btn");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 search("London");
