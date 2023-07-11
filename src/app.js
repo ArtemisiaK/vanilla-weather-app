@@ -88,6 +88,14 @@ function displayFahrenheitTemperature(event) {
   currentTemperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let currentTemperatureElement = document.querySelector(
+    "#todays-temperature-main"
+  );
+  currentTemperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let celsiusTemperature = null;
 
 let buttonClick = document.querySelector("#search-button");
@@ -98,5 +106,8 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("London");
