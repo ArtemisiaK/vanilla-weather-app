@@ -92,6 +92,7 @@ p.precipitation-wind {
 .col-4.future-day {
   color: #133249;
   font-size: 20px;
+  padding: 15px 0;
 }
 .fa-solid.fa-sun {
   color: rgb(233, 177, 45);
