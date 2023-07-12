@@ -44,22 +44,25 @@ function displayForecast() {
 }
 
 function showWeatherCondition(response) {
-  celsiusTemperature = response.data.main.temp;
+  console.log(response);
 
-  document.querySelector("#search-location").innerHTML = response.data.name;
+  celsiusTemperature = response.data.temperature.current;
+
+  document.querySelector("#search-location").innerHTML = response.data.city;
   document.querySelector("#todays-temperature-main").innerHTML =
     Math.round(celsiusTemperature);
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#humidity").innerHTML =
+    response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
 
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].description.charAt(0).toUpperCase() +
-    response.data.weather[0].description.slice(1);
+    response.data.condition.description.charAt(0).toUpperCase() +
+    response.data.condition.description.slice(1);
   console.log(response);
   document.querySelector("#todays-day-time").innerHTML = formatDate(
-    response.data.dt * 1000
+    response.data.time * 1000
   );
 
   document
