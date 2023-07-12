@@ -22,6 +22,20 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = `<div class="row-future">
+                        <div class="col-4 future-day">Wed</div>
+                        <div class="col-4">
+                            <i class="fa-solid fa-sun future-icon-sun"></i>
+                        </div>
+                        <div class="col-4">
+                            <span class="max-temp">17°</span>
+                            <span class="min-temp">8°</span>
+                        </div>`;
+}
+
 function showWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
 
@@ -111,3 +125,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("London");
+displayForecast();
