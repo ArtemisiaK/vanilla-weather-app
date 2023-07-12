@@ -60,7 +60,6 @@ function showWeatherCondition(response) {
   document.querySelector("#weather-description").innerHTML =
     response.data.condition.description.charAt(0).toUpperCase() +
     response.data.condition.description.slice(1);
-  console.log(response);
   document.querySelector("#todays-day-time").innerHTML = formatDate(
     response.data.time * 1000
   );
@@ -74,7 +73,7 @@ function showWeatherCondition(response) {
 
   document
     .querySelector("#current-icon")
-    .setAttribute("alt", response.data.weather[0].description);
+    .setAttribute("alt", response.data.condition.description);
   console.log(response);
 }
 
