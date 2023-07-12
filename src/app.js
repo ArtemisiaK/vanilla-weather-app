@@ -69,7 +69,7 @@ function showWeatherCondition(response) {
     .querySelector("#current-icon")
     .setAttribute(
       "src",
-      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
     );
 
   document
