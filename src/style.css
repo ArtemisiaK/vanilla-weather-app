@@ -46,12 +46,12 @@ p.precipitation-wind {
 }
 .col-6.future {
   display: block;
-  margin: auto;
+  /* margin: auto; */
   background-color: rgb(232, 203, 203);
   font-size: 26px;
   border-radius: 15px;
-  padding: 50px 0;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0;
 }
 .future-temps {
   text-align: center;
@@ -61,6 +61,7 @@ p.precipitation-wind {
 .max-temp {
   color: #133249;
   font-size: 20px;
+  padding: 0 5px 0;
 }
 .min-temp {
   color: #133249;
@@ -76,8 +77,8 @@ p.precipitation-wind {
 .row-future {
   text-align: center;
   padding: 0;
-  margin: 0;
-  height: 56px;
+  margin: 26px;
+  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
