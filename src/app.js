@@ -45,7 +45,7 @@ function displayForecast() {
 
 function showWeatherCondition(response) {
   celsiusTemperature = response.data.temperature.current;
-
+  console.log(response.data);
   document.querySelector("#search-location").innerHTML = response.data.city;
   document.querySelector("#todays-temperature-main").innerHTML =
     Math.round(celsiusTemperature);
@@ -72,7 +72,6 @@ function showWeatherCondition(response) {
   document
     .querySelector("#current-icon")
     .setAttribute("alt", response.data.condition.description);
-  console.log(response);
 }
 
 function search(city) {
@@ -90,6 +89,7 @@ function handleSubmit(event) {
 function searchCurrentLocation(position) {
   let apiKey = "202t323f488633ba301345o8b10a7e9f";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
+  console.log(position.data.coords);
   axios.get(apiUrl).then(showWeatherCondition);
 }
 
