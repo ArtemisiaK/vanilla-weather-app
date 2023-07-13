@@ -171,3 +171,7 @@ a {
 .metric-switcher .active {
   color: #535e4b;
 }
+
+.row .forecast-rows {
+  padding: 30px 0;
+}
