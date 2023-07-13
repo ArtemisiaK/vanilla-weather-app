@@ -29,11 +29,11 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `    <div class="col-4 future-day">${day}</div>
-                        <div class="col-4">
+      `    <div class="col-4 align-self-center future-day">${day}</div>
+                        <div class="col-4 align-self-center">
                             <i class="fa-solid fa-sun future-icon-sun"></i>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 align-self-center">
                             <span class="max-temp">17°</span>
                             <span class="min-temp">8°</span>
                         </div>`;
@@ -44,8 +44,6 @@ function displayForecast() {
 }
 
 function showWeatherCondition(response) {
-  console.log(response);
-
   celsiusTemperature = response.data.temperature.current;
 
   document.querySelector("#search-location").innerHTML = response.data.city;
