@@ -44,7 +44,7 @@ p.precipitation-wind {
   padding: 50px 0;
   color: #133249;
 }
-.col-6.future {
+.col-sm-6.future {
   display: block;
   /* margin: auto; */
   background-color: rgb(232, 203, 203);
