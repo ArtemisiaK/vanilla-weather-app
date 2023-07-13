@@ -113,14 +113,7 @@ p.precipitation-wind {
   padding: 10px 0;
   color: #6c8bc1;
 }
-form {
-  padding: 0;
-  font-size: 12px;
-}
-.form-control {
-  width: 100%;
-  font-size: 15px;
-}
+
 .btn {
   color: #ffffff;
   background: #535e4b;
@@ -133,12 +126,7 @@ form {
   color: #535e4b;
   background: #ffffff;
 }
-.gx-1 {
-  padding: 0 40px;
-}
-.col-9 {
-  padding: 0;
-}
+
 .future-icon-cloud {
   font-size: 20px !important;
   padding: 10px 0;
