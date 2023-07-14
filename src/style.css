@@ -166,3 +166,7 @@ a {
 .search-box {
   border: none;
 }
+.country {
+  color: rgb(118, 118, 118);
+  font-size: smaller;
+}

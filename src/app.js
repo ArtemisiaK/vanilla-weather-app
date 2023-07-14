@@ -74,9 +74,19 @@ function getForecast(coordinates) {
 
 function showWeatherCondition(response) {
   celsiusTemperature = response.data.temperature.current;
+  let countryLocation = response.data.country;
+  if (
+    countryLocation === "United Kingdom of Great Britain and Northern Ireland"
+  ) {
+    countryLocation = countryLocation.replace(
+      "United Kingdom of Great Britain and Northern Ireland",
+      "United Kingdom"
+    );
+  }
+
   console.log(response);
   document.querySelector("#search-location").innerHTML = response.data.city;
-  document.querySelector("#country-weather").innerHTML = response.data.country;
+  document.querySelector("#country-weather").innerHTML = countryLocation;
   document.querySelector("#todays-temperature-main").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML =
