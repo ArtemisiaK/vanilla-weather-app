@@ -132,8 +132,9 @@ p.precipitation-wind {
   padding: 10px 0;
   color: #acafaf;
 }
-p.time-stamp {
-  color: #440a35;
+.last-updated {
+  color: rgb(118, 118, 118);
+  font-size: smaller;
 }
 
 a {
