@@ -24,7 +24,7 @@ function formatDate(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-  console.log(response.data.daily);
+
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row forecast-rows">`;
 
@@ -33,7 +33,12 @@ function displayForecast(response) {
       forecastHTML +
       `    <div class="col-4 align-self-center future-day">${forecastDay.time}</div>
                         <div class="col-4 align-self-center">
-                            <i class="fa-solid fa-sun future-icon-sun"></i>     
+                            <img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
+          alt=""
+          width="50"
+        
+        />     
                         </div>
                         <div class="col-4 align-self-center">
                             <span class="max-temp">${forecastDay.temperature.maximum}°</span>
