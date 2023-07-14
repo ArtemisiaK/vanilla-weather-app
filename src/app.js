@@ -74,8 +74,9 @@ function getForecast(coordinates) {
 
 function showWeatherCondition(response) {
   celsiusTemperature = response.data.temperature.current;
-
+  console.log(response);
   document.querySelector("#search-location").innerHTML = response.data.city;
+  document.querySelector("#country-weather").innerHTML = response.data.country;
   document.querySelector("#todays-temperature-main").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML =
