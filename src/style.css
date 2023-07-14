@@ -151,9 +151,9 @@ a {
   padding: 10px 10px 40px;
 }
 .degree-symbol {
-  font-size: 34px;
+  font-size: 28px;
   position: relative;
-  top: -0.5em;
+  top: -0.75em;
   left: 0.01em;
 }
 .metric-switcher .active {
