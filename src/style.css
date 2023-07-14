@@ -20,10 +20,10 @@ h3.today-detail {
   font-size: 18px;
   color: #133249;
 }
-p.precipitation-wind {
+.humidity-wind {
   font-size: 14px;
-  color: rgb(118, 118, 118);
-  padding-top: 20px;
+  color: #133249;
+  padding: 10px 0;
 }
 
 .container {
