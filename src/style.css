@@ -116,8 +116,8 @@ a {
   cursor: default;
 }
 .exact-location-btn {
-  text-decoration: none;
-  color: antiquewhite;
+  display: block;
+  margin: 0 auto;
 }
 .open-source-link {
   text-align: center;
@@ -136,6 +136,7 @@ a {
 }
 .search-box {
   border: none;
+  padding: 0;
 }
 .country {
   color: rgb(118, 118, 118);
@@ -143,5 +144,9 @@ a {
 }
 .row.search-engine {
   background-color: none;
-  padding: 10px 0;
+  padding-bottom: 15px;
+}
+.btn.search_button {
+  display: block;
+  margin: 0 auto;
 }
