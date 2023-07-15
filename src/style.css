@@ -94,24 +94,10 @@ h3.today-detail {
   font-size: 20px;
   padding: 15px 0;
 }
-.fa-solid.fa-sun {
-  color: rgb(233, 177, 45);
-  font-size: 54px;
-  padding: 0;
-}
+
 .today-temp {
   font-size: 55px;
   font-weight: 700;
-}
-.future-icon-sun {
-  color: rgb(233, 177, 45) !important;
-  font-size: 20px !important;
-  padding: 10px 0;
-}
-.future-icon-rain {
-  font-size: 20px !important;
-  padding: 10px 0;
-  color: #6c8bc1;
 }
 
 .btn {

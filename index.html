@@ -24,27 +24,23 @@
 <body>
     <div class="container">
         <div class="container-wrapper">
-            <div class="row gx-3 p-t-3 ">
-                <form id="location-search">
-                    <div class="row search">
-                        <div class="col-5 search-box">
-                            <div class="form-group">
-                                <input type="search" placeholder="Enter your city" class="form-control shadow-sm"
-                                    autofocus="on" id="search-input" />
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <input type="submit" value="Search" class="btn btn-success shadow-sm" id="search-button" />
-                        </div>
-                        <div class="col-2">
-                            <button class="btn btn-light">
-                                <i id="current-location-btn"
-                                    class="fa-solid fa-location-crosshairs exact-location-btn"></i>
-                            </button>
-                        </div>
+            <form id="location-search">
+                <div class="row gx-3 p-t-3 ">
+                    <div class="col-7 search-box">
+                        <input type="search" placeholder="Enter your city" class="form-control shadow-sm" autofocus="on"
+                            id="search-input">
                     </div>
-                </form>
-            </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="btn btn-success shadow-sm" id="search-button">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-light">
+                            <i id="current-location-btn" class="fa-solid fa-location-crosshairs exact-location-btn"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
             <div class="row mx-auto">
                 <div class="col-6 today">
                     <h1 class="location" id="search-location"></h1>
