@@ -39,10 +39,10 @@ function displayForecast(response) {
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
-      `    <div class="col-4 align-self-center future-day">${formatDay(
+      `    <div class="col-4 d-flex justify-content-center text-center future-day">${formatDay(
         forecastDay.time
       )}</div>
-                        <div class="col-4 align-self-center">
+                        <div class="col-4 d-flex justify-content-center text-center">
                             <img
           src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
             forecastDay.condition.icon
@@ -52,7 +52,7 @@ function displayForecast(response) {
         
         />     
                         </div>
-                        <div class="col-4 align-self-center">
+                        <div class="col-4 d-flex justify-content-center text-center">
                             <span class="max-temp">${Math.round(
                               forecastDay.temperature.maximum
                             )}°</span>

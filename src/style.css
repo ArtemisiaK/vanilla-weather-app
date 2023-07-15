@@ -76,12 +76,12 @@ h3.today-detail {
   align-items: center;
 } */
 
-.col-4 {
+.forecast-temperatures {
   display: inline;
   text-align: center;
   padding: 0;
 }
-.col-4.future-day {
+.future-day {
   color: #133249;
   font-size: 20px;
   padding: 15px 0;
