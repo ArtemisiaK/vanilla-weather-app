@@ -118,6 +118,7 @@ a {
 .exact-location-btn {
   display: block;
   margin: 0 auto;
+  height: 100%;
 }
 .open-source-link {
   text-align: center;
@@ -149,4 +150,5 @@ a {
 .btn.search_button {
   display: block;
   margin: 0 auto;
+  height: 100%;
 }
