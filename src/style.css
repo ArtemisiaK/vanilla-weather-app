@@ -151,3 +151,7 @@ a {
   margin: 0 auto;
   height: 100%;
 }
+.row.forecast-rows {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
