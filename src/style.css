@@ -38,26 +38,21 @@ h3.today-detail {
 }
 
 .today {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   text-align: center;
   padding: 50px 0;
   color: #133249;
 }
-.col-sm-6.future {
+.future {
   display: block;
-  /* margin: auto; */
   background-color: rgb(232, 203, 203);
   font-size: 26px;
   border-radius: 15px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
-.future-temps {
-  text-align: center;
-  display: block;
-  margin: 15px 0;
-}
+
 .max-temp {
   color: #133249;
   font-size: 20px;
@@ -67,9 +62,6 @@ h3.today-detail {
   color: #133249;
   opacity: 75%;
   font-size: 20px;
-}
-.fa sun {
-  padding: 50px;
 }
 
 /* --bs-gutter-x: 0; */
@@ -113,11 +105,6 @@ h3.today-detail {
   background: #ffffff;
 }
 
-.future-icon-cloud {
-  font-size: 20px !important;
-  padding: 10px 0;
-  color: #acafaf;
-}
 .last-updated {
   color: rgb(118, 118, 118);
   font-size: smaller;
@@ -143,9 +130,6 @@ a {
   top: -0.75em;
   left: 0.01em;
 }
-.metric-switcher .active {
-  color: #535e4b;
-}
 
 .row .forecast-rows {
   padding: 30px 0;
@@ -156,4 +140,8 @@ a {
 .country {
   color: rgb(118, 118, 118);
   font-size: smaller;
+}
+.row.search-engine {
+  background-color: none;
+  padding: 10px 0;
 }
