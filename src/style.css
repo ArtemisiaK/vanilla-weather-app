@@ -111,7 +111,7 @@ h3.today-detail {
 }
 
 a {
-  text-decoration: none !important;
+  /* text-decoration: none !important; */
   color: #535e4b;
   cursor: default;
 }
@@ -124,6 +124,7 @@ a {
   text-align: center;
   color: #e79c12;
   padding: 10px 3px 40px;
+  text-decoration: none;
 }
 .degree-symbol {
   font-size: 28px;
