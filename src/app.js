@@ -44,7 +44,7 @@ function displayForecast(response) {
       )}</div>
                         <div class="col-4 align-self-center">
                             <img
-          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
             forecastDay.condition.icon
           }.png"
           alt=""
@@ -105,7 +105,7 @@ function showWeatherCondition(response) {
     .querySelector("#current-icon")
     .setAttribute(
       "src",
-      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+      `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
     );
 
   document
