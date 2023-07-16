@@ -64,18 +64,6 @@ h3.today-detail {
   font-size: 20px;
 }
 
-/* --bs-gutter-x: 0; */
-
-/* .row-future {
-  text-align: center;
-  padding: 30px 0;
-  margin: 26px;
-  height: 62px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .forecast-temperatures {
   display: inline;
   text-align: center;
@@ -103,6 +91,10 @@ h3.today-detail {
   transition: 0.5ms ease-in-out;
   color: #535e4b;
   background: #ffffff;
+}
+.btn-success {
+  --bs-btn-bg: #535e4b;
+  --bs-btn-active-bg: #535e4b;
 }
 
 .last-updated {
