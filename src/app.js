@@ -124,7 +124,11 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
-  search(city);
+  if (city === "") {
+    alert(`Please enter a city`);
+  } else {
+    search(city);
+  }
 }
 
 function searchCurrentLocation(position) {
