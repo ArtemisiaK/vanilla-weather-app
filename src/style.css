@@ -156,3 +156,9 @@ a {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
+.forecast-icons {
+  padding: 15px 0;
+}
+.forecast-max-min {
+  padding: 15px 0;
+}

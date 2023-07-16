@@ -42,7 +42,7 @@ function displayForecast(response) {
       `    <div class="col-4 d-flex justify-content-center text-center future-day">${formatDay(
         forecastDay.time
       )}</div>
-                        <div class="col-4 d-flex justify-content-center text-center">
+                        <div class="col-4 d-flex justify-content-center text-center forecast-icons">
                             <img
           src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
             forecastDay.condition.icon
@@ -52,7 +52,7 @@ function displayForecast(response) {
         
         />     
                         </div>
-                        <div class="col-4 d-flex justify-content-center text-center">
+                        <div class="col-4 d-flex justify-content-center text-center forecast-max-min">
                             <span class="max-temp">${Math.round(
                               forecastDay.temperature.maximum
                             )}°</span>
