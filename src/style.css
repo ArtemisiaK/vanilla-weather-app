@@ -35,6 +35,8 @@ h3.today-detail {
   background-color: antiquewhite;
   padding: 25px;
   border-radius: 15px;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 30%);
+  margin-bottom: 10px;
 }
 
 .today {
@@ -51,6 +53,7 @@ h3.today-detail {
   border-radius: 15px;
   padding: 0;
   margin: 0 auto;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
 }
 
 .max-temp {
