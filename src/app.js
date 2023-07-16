@@ -39,7 +39,7 @@ function displayForecast(response) {
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
-      `    <div class="col-4 d-flex justify-content-center text-center future-day">${formatDay(
+      `    <div class="col-4 d-flex align-items-center justify-content-center future-day">${formatDay(
         forecastDay.time
       )}</div>
                         <div class="col-4 d-flex justify-content-center text-center forecast-icons">
@@ -52,7 +52,7 @@ function displayForecast(response) {
         
         />     
                         </div>
-                        <div class="col-4 d-flex justify-content-center text-center forecast-max-min">
+                        <div class="col-4 d-flex align-items-center justify-content-center forecast-max-min">
                             <span class="max-temp">${Math.round(
                               forecastDay.temperature.maximum
                             )}°</span>
